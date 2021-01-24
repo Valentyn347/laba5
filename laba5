@@ -1,0 +1,9 @@
+import random
+N=int(input('Введіть, скільки чисел має бути в масиві >> '))
+all=list()
+for i in range (N):
+    all.append (random.randint(0,1000))
+print(all)
+num=int(input('Введіть, скільки чисел вивести із масива >> '))
+for b in range (num):
+    print(random.choice(all))
